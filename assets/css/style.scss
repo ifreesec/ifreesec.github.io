@@ -2,8 +2,19 @@
 ---
 
 @import "{{ site.theme }}";
+header .container-header {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+header h2{
+  margin: 0;
+}
 
 footer {
+  padding: 10px 0;
+  margin-top: 50px;
   border-top: 1px dashed #b5e853;
 }
 
