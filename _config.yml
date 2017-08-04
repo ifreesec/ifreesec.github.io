@@ -29,6 +29,11 @@ textile_ext:  "textile"
 
 # Conversion
 markdown:     kramdown
-highlighter:  pygments
+highlighter:  rouge
 lsi:          false
 excerpt_separator: "\n\n"
+
+# Outputting
+permalink:     date
+paginate_path: /page:num
+timezone:      null
