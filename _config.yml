@@ -4,3 +4,31 @@ url: http://blog.ifreesec.com
 description: Information Free and Security.
 google_analytics: UA-103970977-1
 theme: jekyll-theme-hacker
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins:      ./_plugins
+layouts:      ./_layouts
+paginate:     8
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      author: <a href="http://blog.ifreesec.com">张艺</a>
+      meta: ""
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      []
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Conversion
+markdown:     kramdown
+highlighter:  pygments
+lsi:          false
+excerpt_separator: "\n\n"
