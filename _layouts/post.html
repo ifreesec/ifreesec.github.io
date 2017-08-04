@@ -8,7 +8,7 @@ comment: true
         <h1>{{ page.title }}</h1>
         <p class="post-meta">
             <time datetime="{{ page.date | date_to_xmlschema }}">
-                {% assign date_format = site.date_format | default: "%Y-%m-%d %H:%M" %} {{ page.date | date: date_format }}
+                {% assign date_format = site.date_format | default: %Y-%m-%d %H:%M %} {{ page.date | date: date_format }}
             </time>
             {% if page.author %}
             <span class="author">{{ page.author }}</span>
